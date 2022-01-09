@@ -49,9 +49,46 @@
     <!-- https://materializecss.com/cards.html -->
     <div class="container">
       <h1>Projects Form</h1>
-      <h3>Add or Update a Project</h3>
+      <h3 style="text-align: center;">Add or Update a Project</h3>
       <br>
-      <p>TODO</p>
+      <form>
+        <div class="container">
+          <div class="card grey lighten-2">
+            <div class="card-content">
+              <div class="row">
+                <div class="input-field">
+                  <input type="text" id="projectName" class="validate" data-length="32" required>
+                  <label for="projectName">Project Name</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="projectAuthors" class="validate" data-length="64" required>
+                  <label for="projectAuthors">Project Authors</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="description" class="validate" data-length="300" required>
+                  <label for="description">Description</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="techstack" class="validate" data-length="32" required>
+                  <label for="projectAuthors">Tech Stack</label>
+                </div>
+              </div>
+              <div class="input-field col s6">
+                <select id="projectType" name="projectType" required>
+                  <option value="" disabled selected>Choose Project Type</option>
+                  <option value="Type1">Example Type 1</option>
+                  <option value="Type2">Example Type 2</option>
+                  <option value="Type3">Example Type 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="button_wrapper halign-wrapper">
+              <button class="submit waves-effect waves-light btn-large" type="submit">Create</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    </form>
     </div>
   </main>
 
@@ -89,7 +126,7 @@
   </footer>
 
 
-  
+
   <!-- Compiled and minified Materialize JavaScript -->
   <script src="/js/materialize.min.js"></script>
 
